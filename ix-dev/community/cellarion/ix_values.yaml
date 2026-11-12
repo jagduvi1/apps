@@ -1,0 +1,39 @@
+images:
+  image:
+    repository: ghcr.io/jagduvi1/cellarion-backend
+    tag: "1.297.1@sha256:a11dee8a19d0e85270c4f3e2b1126d3dc3755bd226b9b9e3102b7cbd96290e1a"
+  container_utils_image:
+    repository: ghcr.io/truenas/containers/container-utils
+    tag: "1.1.2@sha256:6ddfdc314af9d18cfacb836ad266ef0ed91fecaa3686b20be72e464972860c08"
+  frontend_image:
+    repository: ghcr.io/jagduvi1/cellarion-frontend
+    tag: "1.297.1@sha256:0dc81970d0d9d5f78547d84607ca9700f32b4b05d8a028f7d13b36ea925ebfd3"
+  rembg_image:
+    repository: ghcr.io/jagduvi1/cellarion-rembg
+    tag: "1.297.1@sha256:54f1fd0271b80672db84f72660bacad15513c6344edc00af88ee32bbac9fd367"
+  mongo_image:
+    repository: mongo
+    tag: "8.3.13@sha256:e16e606f792ea89d2b4907b54e5e31eb86a7a23e27231dce3a982cc8f2d73cd2"
+  meilisearch_image:
+    repository: getmeili/meilisearch
+    tag: "v1.56.2@sha256:9600db22be3fcbf3d506176d3a73dd70a65c5719d9aa1d2837355b75afb8f4fb"
+
+consts:
+  backend_container_name: backend
+  frontend_container_name: frontend
+  rembg_container_name: rembg
+  mongo_container_name: mongo
+  meilisearch_container_name: meilisearch
+  perms_container_name: permissions
+
+  db_user: cellarion
+  db_name: cellarion
+
+  backend_port_number: 5000
+  frontend_port_number: 8080
+  rembg_port_number: 5000
+
+  notes_body: |
+    The first account you register is a regular member.</br>
+    To make it an administrator, open a shell on the `backend` container
+    and run `node src/scripts/make-admin.js you@example.com`.
