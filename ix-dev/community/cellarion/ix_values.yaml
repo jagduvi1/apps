@@ -1,19 +1,19 @@
 images:
   image:
     repository: ghcr.io/jagduvi1/cellarion-backend
-    tag: "1.297.1@sha256:a11dee8a19d0e85270c4f3e2b1126d3dc3755bd226b9b9e3102b7cbd96290e1a"
+    tag: "1.297.2@sha256:ab03652c052871179d2bd14c43a763a9c72c8424540c99de5a6937fba1462e95"
   container_utils_image:
     repository: ghcr.io/truenas/containers/container-utils
     tag: "1.1.2@sha256:6ddfdc314af9d18cfacb836ad266ef0ed91fecaa3686b20be72e464972860c08"
   frontend_image:
     repository: ghcr.io/jagduvi1/cellarion-frontend
-    tag: "1.297.1@sha256:0dc81970d0d9d5f78547d84607ca9700f32b4b05d8a028f7d13b36ea925ebfd3"
+    tag: "1.297.2@sha256:4541e6959266e51c9c15ea47d519a4339cdac554412cee3ca823f087ec6b83e7"
   rembg_image:
     repository: ghcr.io/jagduvi1/cellarion-rembg
-    tag: "1.297.1@sha256:54f1fd0271b80672db84f72660bacad15513c6344edc00af88ee32bbac9fd367"
+    tag: "1.297.2@sha256:764b583b324c6072ba640cd8c3b4fd001b0eac70da602e36bdbc34bb475107b7"
   mongo_image:
     repository: mongo
-    tag: "8.3.13@sha256:e16e606f792ea89d2b4907b54e5e31eb86a7a23e27231dce3a982cc8f2d73cd2"
+    tag: "8.3.17@sha256:0f64db83d5926400d1cbcbaf35fbf2b0dfa6a4eaa71e04a26481a38cd803b27b"
   meilisearch_image:
     repository: getmeili/meilisearch
     tag: "v1.56.2@sha256:9600db22be3fcbf3d506176d3a73dd70a65c5719d9aa1d2837355b75afb8f4fb"
