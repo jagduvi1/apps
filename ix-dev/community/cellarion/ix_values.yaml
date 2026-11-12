@@ -1,22 +1,22 @@
 images:
   image:
     repository: ghcr.io/jagduvi1/cellarion-backend
-    tag: "1.281.0@sha256:d2b75008c30b9be9664d407b83bd827564eeb0acaecb70e6fc9f1a84d975c5f4"
-  frontend_image:
-    repository: ghcr.io/jagduvi1/cellarion-frontend
-    tag: "1.281.0@sha256:0abadd29246bdcac69307d61e37cb7f7c066ddad23cb91a853e5ffcaf2563a78"
-  rembg_image:
-    repository: ghcr.io/jagduvi1/cellarion-rembg
-    tag: "1.281.0@sha256:902331317980ac4387598e1131a8265732816bcf84119a6509c530a7332aad52"
-  mongo_image:
-    repository: mongo
-    tag: "7.0.45@sha256:c53852c00c23ca9f23fc39690350ffa9a80e3642fe8f96879726d8da0abe80a7"
-  meilisearch_image:
-    repository: getmeili/meilisearch
-    tag: "v1.45.1@sha256:ac40212f9e5a7526d8007586e3e46fb0441d29dd36c7b02fa2341d2c9a1f6493"
+    tag: "1.297.2@sha256:ab03652c052871179d2bd14c43a763a9c72c8424540c99de5a6937fba1462e95"
   container_utils_image:
     repository: ghcr.io/truenas/containers/container-utils
-    tag: "1.1.1@sha256:d1bdb3a3ed7fc158eca53cd78486c388345c603fe2bf42fb24a1e03e1068ff38"
+    tag: "1.1.2@sha256:6ddfdc314af9d18cfacb836ad266ef0ed91fecaa3686b20be72e464972860c08"
+  frontend_image:
+    repository: ghcr.io/jagduvi1/cellarion-frontend
+    tag: "1.297.2@sha256:4541e6959266e51c9c15ea47d519a4339cdac554412cee3ca823f087ec6b83e7"
+  rembg_image:
+    repository: ghcr.io/jagduvi1/cellarion-rembg
+    tag: "1.297.2@sha256:764b583b324c6072ba640cd8c3b4fd001b0eac70da602e36bdbc34bb475107b7"
+  mongo_image:
+    repository: mongo
+    tag: "8.3.17@sha256:0f64db83d5926400d1cbcbaf35fbf2b0dfa6a4eaa71e04a26481a38cd803b27b"
+  meilisearch_image:
+    repository: getmeili/meilisearch
+    tag: "v1.56.2@sha256:9600db22be3fcbf3d506176d3a73dd70a65c5719d9aa1d2837355b75afb8f4fb"
 
 consts:
   backend_container_name: backend
@@ -27,14 +27,13 @@ consts:
   perms_container_name: permissions
 
   db_user: cellarion
-  db_name: winecellar
+  db_name: cellarion
 
-  backend_port: 5000
-  rembg_port: 5000
-  frontend_port: 8080
-  # The frontend image runs nginx-unprivileged as its own fixed user.
-  frontend_uid: 101
-  frontend_gid: 101
-  # The rembg image bakes its model into the image and runs as its own fixed user.
-  rembg_uid: 10001
-  rembg_gid: 10001
+  backend_port_number: 5000
+  frontend_port_number: 8080
+  rembg_port_number: 5000
+
+  notes_body: |
+    The first account you register is a regular member.</br>
+    To make it an administrator, open a shell on the `backend` container
+    and run `node src/scripts/make-admin.js you@example.com`.

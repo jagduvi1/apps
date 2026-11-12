@@ -1,4 +1,4 @@
-app_version: 1.281.0
+app_version: 1.297.2
 capabilities: []
 categories:
 - productivity
@@ -14,8 +14,8 @@ keywords:
 - cellar
 - collection
 - inventory
-lib_version: 2.3.17
-lib_version_hash: b02a8040f1971a601638300b595bbd5b72f0664ba13fdf7759c212867caeed24
+lib_version: 2.3.18
+lib_version_hash: ed9839f681342ae8ca5f8c4c860ae22d0845a0919f472ba780d6edbc838f2633
 maintainers:
 - email: dev@truenas.com
   name: truenas
@@ -42,11 +42,11 @@ run_as_context:
   group_name: Host group is [apps]
   uid: 568
   user_name: Host user is [apps]
-- description: Container [rembg] runs as non-root user and group.
-  gid: 10001
-  group_name: Host group is [unknown (10001)]
-  uid: 10001
-  user_name: Host user is [unknown (10001)]
+- description: Container [rembg] can run as any non-root user and group.
+  gid: 568
+  group_name: Host group is [apps]
+  uid: 568
+  user_name: Host user is [apps]
 screenshots: []
 sources:
 - https://apps.truenas.com/catalog/cellarion_community/
